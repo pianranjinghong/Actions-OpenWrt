@@ -103,7 +103,7 @@ jobs:
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
-        cp -rf $GITHUB_WORKSPACE/files $GITHUB_WORKSPACE/openwrt
+        cp -rf $GITHUB_WORKSPACE/files/* $GITHUB_WORKSPACE/openwrt/
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
         cat package/lean/default-settings/files/zzz-default-settings
