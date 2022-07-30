@@ -79,6 +79,7 @@ jobs:
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
+        cp -Rf $GITHUB_WORKSPACE/files/* $GITHUB_WORKSPACE/openwrt
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
            
@@ -103,7 +104,6 @@ jobs:
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
-        cp -rf $GITHUB_WORKSPACE/files/* $GITHUB_WORKSPACE/openwrt/
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
         cat package/lean/default-settings/files/zzz-default-settings
