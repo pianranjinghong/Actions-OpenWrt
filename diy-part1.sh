@@ -17,6 +17,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 rm -rf feeds/packages/admin/netdata
 rm -rf feeds/luci/applications/luci-app-netdata
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
 git clone https://github.com/QiuSimons/openwrt-mos package/QiuSimons/openwrt-mosdns
 #git clone https://github.com/sbwml/luci-app-mosdns package/sbwml/luci-app-mosdns
