@@ -16,6 +16,7 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 rm -rf feeds/packages/admin/netdata
+rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/applications/luci-app-netdata
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
@@ -32,6 +33,7 @@ git clone https://github.com/sirpdboy/luci-app-netdata feeds/luci/applications/l
 #svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netdata  feeds/luci/applications/luci-app-netdata
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/netdata feeds/packages/admin/netdata
 svn export --force https://github.com/sundaqiang/openwrt-packages-backup/branches/main/luci/applications/luci-app-rebootschedule package/sundaqiang/luci-app-rebootschedule
+git clone https://github.com/pymumu/smartdns.git feeds/packages/net/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/pymumu/luci-app-smartdns
 
 rm -rf package/xiaorouji/openwrt-passwall/v2ray-geodata   # 删除v2ray-geodata
