@@ -30,7 +30,7 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/xiaorouj
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netspeedtest package/kiddin9/luci-app-netspeedtest
 git clone https://github.com/sirpdboy/luci-app-netdata feeds/luci/applications/luci-app-netdata
 #svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netdata  feeds/luci/applications/luci-app-netdata
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/netdata feeds/packages/admin/netdata
+#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/netdata feeds/packages/admin/netdata
 svn export --force https://github.com/sundaqiang/openwrt-packages-backup/branches/main/luci/applications/luci-app-rebootschedule package/sundaqiang/luci-app-rebootschedule
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/pymumu/luci-app-smartdns
 
