@@ -15,7 +15,7 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-rm -rf feeds/packages/admin/netdata
+#rm -rf feeds/packages/admin/netdata
 rm -rf feeds/luci/applications/luci-app-netdata
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
