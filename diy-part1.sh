@@ -17,13 +17,14 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #rm -rf feeds/packages/admin/netdata
 rm -rf feeds/luci/applications/luci-app-netdata
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-argon    # 删除自带argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon    # 替换新版argon
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
 git clone https://github.com/QiuSimons/openwrt-mos package/QiuSimons/openwrt-mosdns
 #git clone https://github.com/sbwml/luci-app-mosdns package/sbwml/luci-app-mosdns
 #git clone https://github.com/sbwml/v2ray-geodata package/sbwml/luci-app-mosdns/v2ray-geodata
-git clone https://github.com/kiddin9/openwrt-bypass package/kiddin9/openwrt-bypass
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/lua-neturl package/kiddin9/openwrt-bypass/lua-neturl
+#git clone https://github.com/kiddin9/openwrt-bypass package/kiddin9/openwrt-bypass
+#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/lua-neturl package/kiddin9/openwrt-bypass/lua-neturl
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openwrt-passwall2
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 #git clone https://github.com/jerrykuku/luci-app-vssr package/jerrykuku/luci-app-vssr
