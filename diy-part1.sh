@@ -16,7 +16,7 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #rm -rf feeds/packages/admin/netdata
-rm -rf feeds/luci/applications/luci-app-netdata
+#rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/luci/themes/luci-theme-argon    # 删除自带argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon    # 替换新版argon
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
@@ -29,10 +29,10 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openw
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 #git clone https://github.com/jerrykuku/luci-app-vssr package/jerrykuku/luci-app-vssr
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall-luci
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netspeedtest package/kiddin9/luci-app-netspeedtest
-git clone https://github.com/ZeaKyX/speedtest-web package/ZeaKyX/speedtest-web
-git clone https://github.com/sivel/speedtest-cli.git package/sivel/speedtest-cli
-git clone https://github.com/sirpdboy/luci-app-netdata feeds/luci/applications/luci-app-netdata
+#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netspeedtest package/kiddin9/luci-app-netspeedtest
+#git clone https://github.com/ZeaKyX/speedtest-web package/ZeaKyX/speedtest-web
+#git clone https://github.com/sivel/speedtest-cli.git package/sivel/speedtest-cli
+#git clone https://github.com/sirpdboy/luci-app-netdata feeds/luci/applications/luci-app-netdata
 #svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netdata  feeds/luci/applications/luci-app-netdata
 #svn export --force https://github.com/kiddin9/openwrt-packages/trunk/netdata feeds/packages/admin/netdata
 svn export --force https://github.com/sundaqiang/openwrt-packages-backup/branches/main/luci/applications/luci-app-rebootschedule package/sundaqiang/luci-app-rebootschedule
