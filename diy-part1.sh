@@ -47,4 +47,4 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openw
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall-luci
 rm -rf package/xiaorouji/openwrt-passwall/v2ray-geodata   # 删除v2ray-geodata
-git clone https://github.com/yichya/luci-app-xray package/yichya/luci-app-xray
+#git clone https://github.com/yichya/luci-app-xray package/yichya/luci-app-xray
