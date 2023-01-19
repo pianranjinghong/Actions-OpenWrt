@@ -29,9 +29,7 @@
 #svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netspeedtest package/kiddin9/luci-app-netspeedtest
 #git clone https://github.com/ZeaKyX/speedtest-web package/ZeaKyX/speedtest-web
 #git clone https://github.com/sivel/speedtest-cli.git package/sivel/speedtest-cli
-#git clone https://github.com/sirpdboy/luci-app-netdata feeds/luci/applications/luci-app-netdata
-#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netdata  feeds/luci/applications/luci-app-netdata
-#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/netdata feeds/packages/admin/netdata
+
 
 
 
@@ -49,3 +47,4 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openw
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall-luci
 rm -rf package/xiaorouji/openwrt-passwall/v2ray-geodata   # 删除v2ray-geodata
+git clone https://github.com/yichya/luci-app-xray package/yichya/luci-app-xray
