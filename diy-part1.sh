@@ -36,15 +36,15 @@
 #rm -rf package/xiaorouji/openwrt-passwall/v2ray-geodata   # 删除v2ray-geodata
 #rm -rf feeds/packages/net/mosdns
 #rm -rf feeds/packages/net/v2ray-geodata
-#rm -rf feeds/luci/applications/luci-app-mosdns
 
+rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
 svn export --force https://github.com/sundaqiang/openwrt-packages-backup/branches/main/luci/applications/luci-app-rebootschedule package/sundaqiang/luci-app-rebootschedule
-git clone https://github.com/sbwml/v2ray-geodata feeds/packages/net/v2ray-geodata
+#git clone https://github.com/sbwml/v2ray-geodata feeds/packages/net/v2ray-geodata
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/pymumu/luci-app-smartdns
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openwrt-passwall2
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall-luci
 rm -rf package/xiaorouji/openwrt-passwall/v2ray-geodata   # 删除v2ray-geodata
-
+git clone https://github.com/QiuSimons/openwrt-mos package/QiuSimons/openwrt-mos 
