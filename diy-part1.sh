@@ -34,7 +34,7 @@
 
 
 #rm -rf package/xiaorouji/openwrt-passwall/v2ray-geodata   # 删除v2ray-geodata
-#rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/net/mosdns
 #rm -rf feeds/packages/net/v2ray-geodata
 
 rm -rf feeds/luci/applications/luci-app-mosdns
