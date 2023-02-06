@@ -17,7 +17,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-mod/g' feeds/luci/collections/lu
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-nginx/Makefile   # 选择argon为默认主题
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-ssl-nginx/Makefile   # 选择argon为默认主题
 #sed -i 's/+uhttpd +uhttpd-mod-ubus //g' feeds/luci/collections/luci/Makefile    # 删除uhttpd
-sed -i 's/geoip-only-cn-private.dat/geoip.dat/g' feeds/packages/net/v2ray-geodata/Makefile   # 修改geoip.dat
+sed -i 's/geoip-only-cn-private.dat/geoip.dat/g' package/QiuSimons/openwrt-mos/v2ray-geodata/Makefile   # 修改geoip.dat
 sed -i 's/1.2022.38.1/1.2023.40/g' feeds/packages/net/smartdns/Makefile   # 修改smartdns
 sed -i 's/9bc857f628299573c7eca0833229d9812b1c1de4/d792e5f7f71ce9320b341fe02135077e00fa3e21/g' feeds/packages/net/smartdns/Makefile   # 修改smartdns
 sed -i 's/a202b765e6ce8355335c80214819add3ed72a82426b033d7d5adf1448b415063/skip/g' feeds/packages/net/smartdns/Makefile   # 修改smartdns
