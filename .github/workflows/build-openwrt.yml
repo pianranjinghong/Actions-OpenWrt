@@ -39,11 +39,13 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
-
+    runs-on: ubuntu-latest
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      with:
+          fetch-depth: 0
 
     - name: Initialization environment
       env:
@@ -57,7 +59,17 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-        
+   
+    - name: Maximize Build Space
+      uses: easimon/maximize-build-space@master
+      with:
+        root-reserve-mb: 2048
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        build-mount-path: '/workdir'
+          
     - name: Clone source code
       working-directory: /workdir
       run: |
