@@ -48,4 +48,4 @@ svn export --force https://github.com/sundaqiang/openwrt-packages-backup/branche
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/xiaorouji/openwrt-passwall-packages
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
 rm -rf package/xiaorouji/openwrt-passwall-packages/v2ray-geodata   # 删除v2ray-geodata
-git clone https://github.com/QiuSimons/openwrt-mos package/QiuSimons/openwrt-mos 
+#git clone https://github.com/QiuSimons/openwrt-mos package/QiuSimons/openwrt-mos 
