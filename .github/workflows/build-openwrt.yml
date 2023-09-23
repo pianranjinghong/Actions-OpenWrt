@@ -120,6 +120,8 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         cat package/lean/default-settings/files/zzz-default-settings
         cat feeds/luci/collections/luci/Makefile
+        cat package/QiuSimons/openwrt-mos/v2ray-geodata/Makefile   
+        cat package/QiuSimons/openwrt-mos/mosdns/Makefile
         
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
