@@ -30,14 +30,14 @@
 
 #echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 #echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
-rm -rf feeds/packages/net/mosdns
-#rm -rf feeds/packages/net/v2ray-geodata
 
+rm -rf feeds/packages/net/mosdns
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/sundaqiang/openwrt-packages package/sundaqiang
 svn export --force https://github.com/sundaqiang/openwrt-packages-backup/branches/main/luci/applications/luci-app-rebootschedule package/sundaqiang/luci-app-rebootschedule
 git clone -b v5 https://github.com/sbwml/luci-app-mosdns package/sbwml/luci-app-mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/sbwml/v2ray-geodata
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/pymumu/luci-app-smartdns
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openwrt-passwall2
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/xiaorouji/openwrt-passwall-packages
