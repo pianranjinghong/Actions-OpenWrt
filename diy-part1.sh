@@ -42,5 +42,7 @@ git clone https://github.com/sbwml/v2ray-geodata package/sbwml/v2ray-geodata
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/xiaorouji/openwrt-passwall2
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/xiaorouji/openwrt-passwall-packages
 git clone https://github.com/xiaorouji/openwrt-passwall package/xiaorouji/openwrt-passwall
+git clone -b main https://github.com/fw876/helloworld.git package/helloworld
 rm -rf package/xiaorouji/openwrt-passwall-packages/v2ray-geodata   # 删除v2ray-geodata
+rm -rf package/helloworld/v2ray-geodata   # 删除v2ray-geodata
 #git clone https://github.com/QiuSimons/openwrt-mos package/QiuSimons/openwrt-mos 
